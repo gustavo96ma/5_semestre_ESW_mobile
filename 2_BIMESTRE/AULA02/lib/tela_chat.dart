@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'widgets/mensagens_chat.dart';
 
 class TelaChat extends StatefulWidget {
-  const TelaChat({super.key});
+  final String chatId;
+  const TelaChat({super.key, required this.chatId});
 
   @override
   State<TelaChat> createState() => _TelaChatState();
@@ -15,9 +16,9 @@ class _TelaChatState extends State<TelaChat> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
-        title: const Text(
-          '5º ESW',
-          style: TextStyle(color: Colors.white),
+        title: Text(
+          widget.chatId,
+          style: const TextStyle(color: Colors.white),
         ),
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
@@ -29,9 +30,11 @@ class _TelaChatState extends State<TelaChat> {
           )
         ],
       ),
-      body: const Column(
+      body: Column(
         children: [
-          MensagensChat(),
+          MensagensChat(
+            chatId: widget.chatId,
+          ),
         ],
       ),
     );

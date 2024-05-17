@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
 class Mensagem extends StatelessWidget {
-  const Mensagem({super.key});
+  final String conteudoMensagem;
+  final String nomeUsuario;
+  const Mensagem({
+    super.key,
+    required this.conteudoMensagem,
+    required this.nomeUsuario,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,14 +21,14 @@ class Mensagem extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.only(
+                  Padding(
+                    padding: const EdgeInsets.only(
                       left: 13,
                       right: 13,
                     ),
                     child: Text(
-                      'Erick',
-                      style: TextStyle(
+                      nomeUsuario, //Nome do usuario
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.black87,
                       ),
@@ -47,9 +53,9 @@ class Mensagem extends StatelessWidget {
                       vertical: 4,
                       horizontal: 12,
                     ),
-                    child: const Text(
-                      'messagem teste asdasd',
-                      style: TextStyle(
+                    child: Text(
+                      conteudoMensagem, //conteudo da mensagem
+                      style: const TextStyle(
                         height: 1.3,
                         color: Colors.black87,
                       ),
