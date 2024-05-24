@@ -1,0 +1,47 @@
+{
+   "checksum": "e79882ac7ade934706417fdb2fec952e",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13356483181840188",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13356483568623006",
+            "date_last_used": "0",
+            "guid": "fc1ef7d3-d006-42c1-980b-2e0e93045caf",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "localhost:49910",
+            "type": "url",
+            "url": "http://localhost:49910/"
+         } ],
+         "date_added": "13356483181840190",
+         "date_last_used": "0",
+         "date_modified": "13356483568623006",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Outros favoritos",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13356483181840191",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoritos nos dispositivos móveis",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
