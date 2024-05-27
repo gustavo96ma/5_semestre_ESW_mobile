@@ -88,8 +88,7 @@ class _TelaListaDeChatsState extends State<TelaListaDeChats> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) =>
-                            TelaChat(chatId: chatsCarregados[index].id),
+                        builder: (context) => TelaChat(chatId: chatsCarregados[index].id),
                       ),
                     );
                   },
